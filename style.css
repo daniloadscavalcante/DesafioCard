@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Mochiy+Pop+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;500;700&family=Roboto:wght@300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap');
+
+:root{
+    --primary-color:#19A1AD;
+    --seconde-color:hsl(0, 0%, 59%);
+    --third-color: #000;
+    --fourth-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg") var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: left -300px top -40vw, right -20vw bottom -45vw;
+   
+    height: 100vh;
+    font-size: 11px;   
+    color: var(--seconde-color);   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card{
+    background: url("./images/bg-pattern-card.svg") var(--fourth-color);
+    background-repeat: no-repeat;
+    max-width: 320px;
+    width: 100%;
+    height: 350px;
+    border-radius: 13px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.card__foto{
+    margin-top: 5rem;
+}
+.card__foto img{
+    border-radius: 50px;
+    border: 4px solid var(--fourth-color);
+}
+.card__dadoPerfil{
+    margin: 15px 0;    
+}
+.card__dadoPerfil h4{
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: var(--third-color);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.card__idade{
+    font-weight: normal; 
+    color: var(--seconde-color);   
+}
+.card__info{
+    border-top: 1px solid hsl(0, 0%, 90%);  
+    width: 100%;
+    padding: 17px 50px;
+    text-align: center;
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;    
+}
+.card__info span{
+    display: block;
+    text-align: center;       
+}
+.card__info h5{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--third-color);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.attribution{
+    margin-top: 10px;
+    color:#000;
+}
+.attribution a{   
+    color:#000;
+}
+@media only screen and (max-width:1115px){
+    body{   
+    background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg") var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: left -200px top -38vw, right -15vw bottom -40vw;
+    background-size: 70%;   
+    }
+}
+@media only screen and (max-width: 500px){
+    body{       
+        background-position: left -600px top -400px, right -500px bottom -400px;
+        background-size: cover;
+        }
+}
+@media only screen and (max-width: 400px){
+    body{      
+        background-position: left -450px top -400px, right -450px bottom -350px;
+        
+        }
+}
