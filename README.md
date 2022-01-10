@@ -1,5 +1,3 @@
-# DesafioCard
-
 
 # Card-frontend-mentor
 
